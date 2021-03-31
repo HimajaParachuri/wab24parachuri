@@ -3,8 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome, #{title}
-  button(Type="button", class="btn btn-primary") press me
-  div(id="target" class="container text-center m-2 p-3" style="color:pink;font-weight:650; background-color:lightblue;") Display
+  button(Type="button", class="btn btn-primary btn-lg" onclick="update()") Press me
+  div(id="target" class="container text-center m-2 p-3" style="color:blue;font-weight:650; background-color:lightblue;") Display
   script. 
       var client_count=0 
       function update(){
